@@ -1,0 +1,25 @@
+{
+  "name": "portafolio-odontologia",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "build:css": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css --watch",
+    "dev": "concurrently \"npm run build:css\" \"nodemon\""
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "tailwindcss-pseudo-elements": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^9.2.0",
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.9.3",
+    "nodemon": "^3.1.10",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.2"
+  }
+}

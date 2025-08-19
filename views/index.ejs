@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Odontología</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="/css/custom.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-gray-900">
+  <div class="relative">
+    <!-- Portada -->
+    <!-- <section class="relative sticky top-0 h-screen bg-dark-smooth text-white flex 
+      items-center justify-center px-4 overflow-hidden"> -->
+    <section class="relative sticky top-0 h-screen bg-dark-circle bg-dental-watermark text-white flex 
+      items-center justify-center px-4 overflow-hidden">
+      <!-- Imagen flotante izquierda -->
+      <img 
+        src="/img/labio_portada.png" 
+        alt="Diseño odontológico" 
+        class="absolute left-0 top-0 h-full object-contain pointer-events-none hidden md:block
+        animate-fade-in-left delay-300"
+      />
+      <!-- Imagen derecha (logo) -->
+      <img 
+        src="/img/logo_portada.png" 
+        alt="Logo" 
+        class="
+        absolute
+        right-[0.5rem] sm:right-[5rem] md:right-[7rem] lg:right-[7rem]
+        top-[7rem] sm:top-[2rem] md:top-[3rem]
+        w-[340px] sm:w-[100px] md:w-[120px] lg:w-[430px]
+        transition-all duration-200
+        hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]
+        animate-fade-in-down delay-300"
+      />
+      <!-- Contenido principal -->
+      <div class="absolute bottom-10 text-center max-w-md z-10 sm:right-[5rem] md:right-[7rem] lg:right-[7rem]
+        top-[22.3rem] sm:top-[22.3rem] md:top-[22.3rem] reveal">
+        <p class="text-base sm:text-lg md:text-2xl font-cinzel tracking-wide text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] mb-6">
+          Tu <span class="bg-gold-soft-text bg-clip-text text-transparent font-extrabold animate-gold-sweep">
+          sonrisa
+        </span>, tu mejor accesorio
+        </p>
+        <div class="flex flex-row justify-center items-center gap-3 flex-wrap">
+          <a href="#services"
+            class="btn-silver btn-gold-hover-scale inline-flex items-center gap-2 text-black max-w-max font-inter">
+            <i data-lucide="briefcase-medical" class="w-5 h-5"></i>Servicios
+          </a>
+          <a href="https://wa.me/573215994877?text=Hola Dr. Osmar Santander,%20Quisiera%20agendar%20una%20cita"
+            target="_blank" rel="noopener noreferrer"
+            class="btn-gold-soft inline-flex items-center text-black gap-2 max-w-max font-inter">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            Agenda tu cita
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Acerca de mí -->
+    <section id="about" class="sticky top-0 h-screen bg-white overflow-hidden bg-dental-watermark px-4 py-10 flex items-center justify-center">
+      <div class="relative max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Foto del doctor -->
+        <div class="
+          absolute sm:relative
+          right-[4.5rem] top-[-21.6rem]
+          sm:right-auto sm:top-auto
+          lg:left-[4rem] lg:top-2
+          w-[195px] h-[195px] sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-[430px] lg:h-[430px]
+          rounded-full
+          transition-all duration-500 group reveal
+        ">
+          <img src="/img/foto_about.png" alt="Dr. Osmar Santander"
+            class="w-full h-full object-cover rounded-full
+                  transform -translate-y-2 scale-105 transition-transform duration-500" />
+        </div>
+        <!-- Texto informativo -->
+        <div class="
+          absolute sm:relative
+          left-[1rem] top-[-8rem]
+          sm:left-auto sm:top-auto
+          lg:ml-[1rem]
+          self-auto lg:self-start
+          max-w-[90%] sm:max-w-none
+          text-center md:text-left z-10
+        ">
+          <h2 class="text-xl sm:text-3xl font-semibold bg-gold-soft-texto bg-clip-text text-transparent 
+            mb-4 sm:mb-6 transition-all duration-200 
+            drop-shadow-[0_0_12px_rgba(255,215,0,0.1)] font-cinzel reveal animate-gold-sweep">
+            Dr. Osmar Santander
+          </h2>
+          <p class="text-sm sm:text-lg leading-relaxed font-inter text-justify reveal">
+            Odontólogo egresado de la Universidad Santiago de Cali, con más de 8 años de experiencia transformando sonrisas. Me especializo en tecnología biomimética y técnicas avanzadas que garantizan precisión, naturalidad y resultados duraderos.
+            Mi compromiso con la excelencia, el profesionalismo y un enfoque totalmente personalizado me permite brindar a cada paciente la confianza y atención que merece.
+          </p>
+        </div>
+        <!-- logos -->
+        <div class="absolute right-[12.8rem] sm:right-[5rem] md:right-[7rem] lg:right-[29rem]
+            top-[11rem] sm:top-[8rem] lg:top-[17rem]
+            w-[72px] sm:w-[100px] md:w-[120px] lg:w-[88px] h-auto reveal">
+          <img src="/img/logo_usc.png" alt="Logo usc" class="w-full h-full object-contain" />
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-70 
+                      animate-shine pointer-events-none transform rotate-12"></div>
+        </div>
+        <div class="absolute right-[8rem] sm:right-[5rem] md:right-[7rem] lg:right-[23.5rem]
+          top-[10.7rem] sm:top-[2rem] lg:top-[17rem]
+          w-[68px] sm:w-[100px] md:w-[120px] lg:w-[80px] reveal h-auto">
+          <img src="/img/logo_federacion.png" alt="Logo Federación" class="w-full h-full object-contain" />
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-70 
+                      animate-shine pointer-events-none transform rotate-12"></div>
+        </div>
+        <div class="absolute right-[3.2rem] sm:right-[5rem] md:right-[7rem] lg:right-[18rem]
+          top-[10.9rem] sm:top-[2rem] lg:top-[17rem]
+          w-[70px] sm:w-[100px] md:w-[120px] lg:w-[80px] reveal h-auto">
+          <img src="/img/logo_servicio.png" alt="Logo servicio" class="w-full h-full object-contain" />
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-70 
+                      animate-shine pointer-events-none transform rotate-12"></div>
+        </div>
+        <!-- boton -->
+        <div class="reveal absolute top-[16.7rem] right-[4.7rem] md:top-[20rem] md:right-[10rem] lg:top-[18rem] lg:right-[1rem]">
+          <a href="#gallery"
+            class="btn-gold-soft transform-gpu inline-flex items-center gap-2 text-black max-w-max font-inter">
+            <i class="fa-solid fa-tooth text-base"></i>
+            Casos Clínicos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="sticky top-0 h-screen bg-gold-soft bg-dental-watermark py-10 pt-3 px-4 flex items-center justify-center">
+      <div class="w-full max-w-6xl px-4 text-center">
+        <h2 class="text-2xl lg:text-3xl sm:text-3xl font-semibold
+          bg-gradient-to-r text-[#111111]
+          bg-clip-text mb-10 transition-all duration-200 font-cinzel reveal">
+          Nuestros Servicios
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+          <div class="holo-card relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center reveal">
+            <img src="/img/ceramica.png" alt="Cerámica" class="w-16 h-16 object-contain mb-3 transition-transform duration-300 hover:scale-105" />
+            <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Diseño de sonrisa en cerámica</h3>
+          </div>
+
+          <div class="holo-card bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center reveal">
+            <img src="/img/resina.png" alt="Resina" class="w-16 h-16 object-contain mb-3 transition-transform duration-300 hover:scale-105" />
+            <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Diseño de sonrisa en resina</h3>
+          </div>
+
+          <div class="holo-card bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center reveal">
+            <img src="/img/restaurar.png" alt="Restaurativa" class="w-16 h-16 object-contain mb-3 transition-transform duration-300 hover:scale-105" />
+            <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Odontología restaurativa</h3>
+          </div>
+
+          <div class="holo-card bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center reveal">
+            <img src="/img/implantes.png" alt="Implantes" class="w-16 h-16 object-contain mb-3 transition-transform duration-300 hover:scale-105" />
+            <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Rehabilitación e implantes</h3>
+          </div>
+
+          <div class="holo-card bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center reveal">
+            <img src="/img/endodoncia.png" alt="Endodoncia" class="w-16 h-16 object-contain mb-3 transition-transform duration-300 hover:scale-105" />
+            <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Endodoncia</h3>
+          </div>
+
+          <div class="holo-card bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center reveal">
+            <img src="/img/limpieza.png" alt="Limpieza" class="w-16 h-16 object-contain mb-3 transition-transform duration-300 hover:scale-105" />
+            <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Limpieza</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="gallery" class="sticky top-0 h-screen w-full bg-white px-4 py-10 flex flex-col justify-center bg-dental-watermark text-white">
+      <h2 class="text-center text-3xl font-semibold mb-4 bg-gold-soft-texto bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,215,0,0.1)] font-cinzel animate-gold-sweep reveal">Galería de Casos</h2>
+
+      <!-- Carrusel contenedor -->
+      <div class="relative max-w-4xl mx-auto w-full overflow-hidden">
+
+        <!-- Flechas -->
+        <button id="prevGallery" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow">
+          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <div id="gallery-carousel" class="flex w-full transition-transform duration-500 ease-in-out reveal">
+          <!-- Slide/Card 1 -->
+          <div class="w-full min-w-full flex-shrink-0">
+            <div class="rounded-xl flex flex-col items-center gap-4">
+              <!-- Galería de imágenes -->
+              <div class="grid grid-cols-2 pt-1 sm:grid-cols-3 gap-4">
+                <div class="w-full"><img src="/img/caso_4/1.png" alt="Caso 1" onclick="openModal('/img/caso_4/1.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
+                <div class="w-full"><img src="/img/caso_4/2.png" alt="Caso 2" onclick="openModal('/img/caso_4/2.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
+                <div class="w-full"><img src="/img/caso_4/3.png" alt="Caso 3" onclick="openModal('/img/caso_4/3.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
+                <div class="w-full"><img src="/img/caso_4/4.png" alt="Caso 4" onclick="openModal('/img/caso_4/4.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
+                <div class="w-full"><img src="/img/caso_4/5.png" alt="Caso 5" onclick="openModal('/img/caso_4/5.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
+                <div class="w-full"><img src="/img/caso_4/6.png" alt="Caso 6" onclick="openModal('/img/caso_4/6.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
+              </div>
+              <!-- Texto Descriptivo -->
+              <div class="bg-white backdrop-blur-sm text-center text-sm w-full max-w-[780px] rounded-xl px-2 py-2 space-y-2">
+                <!-- Procedimiento -->
+                <p class="font-bold text-gray-900">Diseño cerámico + Armonización labial.</p>
+                <!-- Línea combinada de testimonio y nombre -->
+                <div class="flex flex-col lg:flex-row flex-wrap justify-center items-center gap-x-2 text-gray-500 italic text-center lg:text-left">
+                  <span>“El cambio ha sido increíble, nunca imaginé sonreír con tanta confianza.”</span>
+                  <span class="not-italic font-medium text-gray-700">– Luz Glen / EU.</span>
+                  <img src="/img/flags/um.svg" alt="usa" class="w-5 h-5 object-contain" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide/Card 2 -->
+          <div class="w-full min-w-full flex-shrink-0">
+            <div class="rounded-xl flex flex-col items-center gap-4">
+              <!-- Galería de imágenes 3x2 o 2x3 según pantalla -->
+              <div class="grid grid-cols-2 pt-1 sm:grid-cols-3 gap-4">
+                <img src="/img/caso_1/1.png" alt="Caso 1" onclick="openModal('/img/caso_1/1.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_1/2.png" alt="Caso 2" onclick="openModal('/img/caso_1/2.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_1/3.png" alt="Caso 3" onclick="openModal('/img/caso_1/3.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_1/4.png" alt="Caso 4" onclick="openModal('/img/caso_1/4.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_1/5.png" alt="Caso 5" onclick="openModal('/img/caso_1/5.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_1/6.png" alt="Caso 6" onclick="openModal('/img/caso_1/6.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+              </div>
+              <!-- Texto Descriptivo -->
+              <div class="bg-white backdrop-blur-sm text-center text-sm w-full max-w-[780px] rounded-xl px-2 py-2 space-y-2">
+                <!-- Procedimiento -->
+                <p class="font-bold text-gray-900">Diseño cerámico, estética y durabilidad óptima.</p>
+                <!-- Línea combinada de testimonio y nombre -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-x-2 text-gray-500 italic">
+                  <span>"Volver a sonreír sin miedo ha sido lo mejor que me ha pasado."</span>
+                  <span class="not-italic font-medium text-gray-700">– Anais Valencia / PR.</span>
+                  <img src="/img/flags/pr.svg" alt="Puerto Rico" class="w-5 h-5 object-contain" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide/Card 3 -->
+          <div class="w-full min-w-full flex-shrink-0">
+            <div class="rounded-xl flex flex-col items-center gap-4">
+              <!-- Galería de imágenes -->
+              <div class="grid grid-cols-2 pt-1 sm:grid-cols-3 gap-4">
+                <img src="/img/caso_2/1.png" alt="Caso 1" onclick="openModal('/img/caso_2/1.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_2/2.png" alt="Caso 2" onclick="openModal('/img/caso_2/2.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_2/3.png" alt="Caso 3" onclick="openModal('/img/caso_2/3.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_2/4.png" alt="Caso 4" onclick="openModal('/img/caso_2/4.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_2/5.png" alt="Caso 5" onclick="openModal('/img/caso_2/5.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_2/6.png" alt="Caso 6" onclick="openModal('/img/caso_2/6.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+              </div>
+              <!-- Texto Descriptivo -->
+              <div class="bg-white backdrop-blur-sm text-center text-sm w-full max-w-[780px] rounded-xl px-2 py-2 space-y-2">
+                <!-- Procedimiento -->
+                <p class="font-bold text-gray-900">Restauración biomimética.</p>
+                <!-- Línea combinada de testimonio y nombre -->
+                <div class="flex flex-col lg:flex-row flex-wrap justify-center items-center gap-x-2 text-gray-500 italic text-center lg:text-left">
+                  <span>"No imaginaba que se pudiera lograr un resultado tan natural. ¡Estoy impresionado!"</span>
+                  <span class="not-italic font-medium text-gray-700">– Santiago López / COL.</span>
+                  <img src="/img/flags/co.svg" alt="Colombia1" class="w-5 h-5 object-contain" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide/Card 4 -->
+          <div class="w-full min-w-full flex-shrink-0">
+            <div class="rounded-xl flex flex-col items-center gap-4">
+              <!-- Galería de imágenes -->
+              <div class="grid grid-cols-2 pt-1 sm:grid-cols-3 gap-4">
+                <img src="/img/caso_3/1.png" alt="Caso 1" onclick="openModal('/img/caso_3/1.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_3/2.png" alt="Caso 2" onclick="openModal('/img/caso_3/2.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_3/3.png" alt="Caso 3" onclick="openModal('/img/caso_3/3.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_3/4.png" alt="Caso 4" onclick="openModal('/img/caso_3/4.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_3/5.png" alt="Caso 5" onclick="openModal('/img/caso_3/5.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <img src="/img/caso_3/6.png" alt="Caso 6" onclick="openModal('/img/caso_3/6.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+              </div>
+              <!-- Texto Descriptivo -->
+              <div class="bg-white backdrop-blur-sm text-center text-sm w-full max-w-[780px] rounded-xl px-2 py-2 space-y-2">
+                <!-- Procedimiento -->
+                <p class="font-bold text-gray-900">Restauraciones biomimética estéticas.</p>
+                <!-- Línea combinada de testimonio y nombre -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-x-2 text-gray-500 italic">
+                  <span>"Me siento feliz de volver a mostrar mi sonrisa, gracias por devolverme la confianza."</span>
+                  <span class="not-italic font-medium text-gray-700">– María Lerma / COL.</span>
+                  <img src="/img/flags/co.svg" alt="Colombia2" class="w-5 h-5 object-contain" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flecha Derecha -->
+        <button id="nextGallery" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow">
+          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal de imagen ampliada -->
+      <div id="imageModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 px-4">
+        <div id="modalContent" class="relative w-full max-w-xl sm:max-w-2xl md:max-w-3xl max-h-[90vh] opacity-0 scale-95 transition-all duration-300 ease-out">
+          <!-- Botón de cerrar -->
+          <button onclick="closeModal()" 
+            class="absolute -top-3 -right-3 rounded-full shadow-md p-1.5 sm:p-2.5
+                  transition-all duration-300 hover:scale-105
+                  bg-[radial-gradient(circle_at_30%_30%,#fdf6e3,#f5c877_20%,#d8a842_50%,#b88a2c_90%)]
+                  hover:bg-[radial-gradient(circle_at_70%_70%,#fdf6e3,#f5c877_20%,#d8a842_50%,#b88a2c_90%)]
+                  text-white hover:drop-shadow-[0_0_6px_rgba(255,215,0,0.3)] z-50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <!-- Imagen -->
+          <img id="modalImage" src="" class="w-full h-auto max-h-[80vh] object-contain rounded-xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Ubicación y Pie de Página -->
+    <section id="location-footer" class="sticky h-screen bg-dark-circle bg-dental-watermark text-white px-4 py-10 pb-0">
+      <!-- Fila 1: Info + Mapa -->
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-[3rem] lg:my-[3rem] lg:mb-[7rem]">
+        <!-- Columna Izquierda: Información -->
+        <div class="space-y-4">
+          <h2 class="text-2xl lg:text-3xl font-semibold font-cinzel bg-gold-soft-text
+            bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,215,0,0.1)] animate-gold-sweep reveal">
+            Contacto personal
+          </h2>
+
+          <p class="text-sm font-inter reveal">
+            <strong class="bg-gold-soft-text bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,215,0,0.1)] animate-gold-sweep">
+              Teléfono:
+            </strong> 
+            <a href="tel:+573013271036" class="hover:underline">301 327 1036</a>
+          </p>
+
+          <p class="text-sm font-inter reveal">
+            <strong class="bg-gold-soft-text bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,215,0,0.1)] animate-gold-sweep">
+              Email:
+            </strong> 
+            <a href="mailto:od.osmarsantander@gmail.com" class="hover:underline">od.osmarsantander@gmail.com</a>
+          </p>
+
+          <p class="text-sm font-inter reveal">
+            <strong class="bg-gold-soft-text bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,215,0,0.1)] animate-gold-sweep">
+              Dirección:
+            </strong> 
+            Cali, Colombia
+          </p>
+
+          <!-- Bloque Instagram -->
+          <div class="flex items-center space-x-2 reveal">
+            <a href="https://instagram.com/dr.osmarsantander" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 group">
+              <img src="/img/instagram-icon.png" alt="Instagram" class="w-8 h-8 transition-transform duration-300 group-hover:scale-110" />
+              <span class="font-inter text-sm group-hover:underline">
+                @dr.osmarsantander
+              </span>
+            </a>
+          </div>
+
+          <p class="text-sm italic font-inter bg-gold-soft-text
+            bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,215,0,0.1)] animate-gold-sweep reveal">
+            ¡Agenda tu cita y transforma tu sonrisa con confianza y seguridad!
+          </p>
+        </div>
+
+        <!-- Columna Derecha: Mapa -->
+        <div class="space-y-4">
+          <h2 class="text-2xl lg:text-3xl font-semibold font-cinzel 
+            bg-gold-soft-text
+            bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,215,0,0.1)] animate-gold-sweep reveal">
+              Encuéntrame aquí
+          </h2>
+          <div class="w-full h-64 rounded-lg overflow-hidden shadow-md reveal">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.675439119327!2d-76.4980564305538!3d3.422636838497716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a721f194fbe3%3A0xa9e1edec9266a04e!2sCl.%2072i%20%2328e-133%20a%2028e-71%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1754269581179!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fila 2: Pie de Página -->
+      <footer class="border-t border-gray-300 pt-2 text-center text-sm">
+        <p class="bg-gold-soft-text
+            bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,215,0,0.1)] animate-gold-sweep">&copy; <span id="year"></span> Dr. Osmar Santander. Todos los derechos reservados.</p>
+        <!-- <div class="mt-2 flex justify-center gap-4">
+          <a href="https://wa.me/573001112233?text=Hola%20Dr.%20Osmar%20Santander,%20quisiera%20agendar%20una%20cita" target="_blank" class="hover:text-green-600 transition-colors duration-200">
+            <i class="fab fa-whatsapp text-lg"></i>
+          </a>
+          <a href="https://instagram.com/dr.osmarsantander" target="_blank" class="hover:text-pink-500 transition-colors duration-200">
+            <i class="fab fa-instagram text-lg"></i>
+          </a>
+        </div> -->
+      </footer>
+    </section>
+  </div>
+  <a
+    id="btn-whatsapp"
+    href="https://wa.me/573001112233?text=Hola%20Dr.%20Osmar%20Santander,%20quisiera%20agendar%20una%20cita"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="group tooltip-visible fixed bottom-[4.5rem] right-[1.1rem] z-50 hover:scale-110 transition-transform hidden"
+    aria-label="WhatsApp"
+  >
+    <!-- Tooltip -->
+    <span 
+      class="relative before:content-['¡Agenda_tu_cita!'] before:absolute before:top-1/2 before:right-[120%] before:-translate-y-1/2
+      before:bg-[radial-gradient(circle_at_30%_30%,#fdf6e3,#f5c877_30%,#d8a842_50%,#b88a2c_65%,#f5c877_90%)]
+      before:text-black before:text-xs before:font-semibold before:px-3 before:py-1
+      before:rounded-lg before:shadow-lg before:whitespace-nowrap group-hover:before:opacity-100 before:group-[.tooltip-visible]:opacity-100
+      before:opacity-0 before:transition-opacity before:duration-100
+      before:pointer-events-none"
+    >
+      <!-- Flecha del tooltip -->
+      <span
+        class="before:absolute before:top-1/2 before:right-[108%] before:-translate-y-1/2
+        before:border-8 before:border-transparent before:border-l-[#f5c877] before:content-[''] before:translate-x-2
+        group-hover:before:opacity-100 before:group-[.tooltip-visible]:opacity-100 before:opacity-0 before:transition-opacity before:duration-100"
+      ></span>
+
+      <!-- Ícono WhatsApp -->
+      <img src="/img/whatsapp-icon.png" alt="WhatsApp" class="w-[3.1rem] h-[3.1rem]" />
+    </span>
+  </a>
+  <a 
+    id="btn-up"
+    class="fixed bottom-5 right-5 
+    bg-[radial-gradient(circle_at_30%_30%,#fdf6e3,#f5c877_20%,#d8a842_50%,#b88a2c_90%)]
+    text-white p-3 rounded-full shadow-md 
+    hover:scale-105 transition-transform duration-300 ease-in-out
+    hover:bg-[radial-gradient(circle_at_70%_70%,#fdf6e3,#f5c877_20%,#d8a842_50%,#b88a2c_90%)]
+    hover:drop-shadow-[0_0_6px_rgba(255,215,0,0.3)]
+    z-50 hidden"
+    aria-label="Subir al inicio"
+  >
+    <i data-lucide="chevron-up" class="w-5 h-5"></i>
+  </a>
+  <script>
+    // Año actual en el footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sr = ScrollReveal({
+        distance: '60px',
+        duration: 900,
+        easing: 'ease-in',
+        origin: 'bottom',
+        interval: 900,
+        mobile: true,
+        reset: false
+      });
+
+      sr.reveal('.reveal');
+
+      // Forzar un "trigger" inicial para mostrar lo que ya está visible
+      window.dispatchEvent(new Event('scroll'));
+    });
+  </script>
+  <script>
+    const btnUp = document.getElementById("btn-up");
+    const btnWhatsapp = document.getElementById("btn-whatsapp");
+
+    let tooltipTimeout;
+    let primera = false
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        btnUp.classList.remove("hidden");
+        btnWhatsapp.classList.remove("hidden");
+        if (!primera) {
+          primera = true
+          // Mostrar tooltip cada vez
+          btnWhatsapp.classList.add("tooltip-visible");
+          // Limpiar cualquier timeout anterior
+          clearTimeout(tooltipTimeout);
+          // Quitar la clase después de 3 segundos
+          tooltipTimeout = setTimeout(() => {
+            btnWhatsapp.classList.remove("tooltip-visible");
+          }, 3000);
+        }
+      } else {
+        primera = false
+        btnUp.classList.add("hidden");
+        btnWhatsapp.classList.add("hidden");
+        btnWhatsapp.classList.remove("tooltip-visible");
+
+        // Por si está esperando quitarlo
+        clearTimeout(tooltipTimeout);
+      }
+    });
+    btnUp.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+  <script>
+    const carouselGallery = document.getElementById('gallery-carousel');
+    const slides = carouselGallery.children;
+    const next = document.getElementById('nextGallery');
+    const prev = document.getElementById('prevGallery');
+    let index = 0;
+
+    function updateCarousel() {
+      carouselGallery.style.transform = `translateX(-${index * 100}%)`;
+    } 
+
+    function goToNext() {
+      index = (index + 1) % slides.length;
+      updateCarousel();
+    }
+
+    function goToPrev() {
+      index = (index - 1 + slides.length) % slides.length;
+      updateCarousel();
+    }
+
+    next.addEventListener('click', () => {
+      goToNext();
+      resetAutoScroll();
+    });
+
+    prev.addEventListener('click', () => {
+      goToPrev();
+      resetAutoScroll();
+    });
+
+    // Auto-scroll cada 7 segundos
+    let autoScroll = setInterval(goToNext, 10000);
+
+    // Función para detener el autoscroll
+    function stopAutoScroll() {
+      clearInterval(autoScroll);
+    }
+
+    function startAutoScroll() {
+      autoScroll = setInterval(goToNext, 10000);
+    }
+
+    function resetAutoScroll() {
+      stopAutoScroll();
+      startAutoScroll();
+    }
+
+    function openModal(src) {
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+      const modalContent = document.getElementById('modalContent');
+
+      modalImage.src = src;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+
+      // Forzar reflow para que la transición funcione
+      void modalContent.offsetWidth;
+      modalContent.classList.remove('opacity-0', 'scale-95');
+      modalContent.classList.add('opacity-100', 'scale-100');
+      stopAutoScroll(); 
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      const modalContent = document.getElementById('modalContent');
+
+      modalContent.classList.remove('opacity-100', 'scale-100');
+      modalContent.classList.add('opacity-0', 'scale-95');
+
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }, 300); // coincide con duration-300
+      startAutoScroll();
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+.holo-card {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.holo-card::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    145deg,
+    transparent 0%,
+    rgba(240, 240, 240, 0.0) 20%,
+    rgba(220, 220, 220, 0.1) 40%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(220, 220, 220, 0.1) 60%,
+    rgba(240, 240, 240, 0.0) 80%,
+    transparent 100%
+  );
+  animation: holo-sweep 3s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
