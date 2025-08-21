@@ -1,17 +1,16 @@
-// const express = require('express');
-// const path = require('path');
+const express = require('express');
+const path = require('path');
 // const livereload = require('livereload');
 // const connectLivereload = require('connect-livereload');
 
-// const app = express();
+const app = express();
 
-// // 👇 Livereload server para la carpeta "public" y "views"
+// 👇 Livereload server para la carpeta "public" y "views"
 // const liveReloadServer = livereload.createServer();
 // liveReloadServer.watch([
 //   path.join(__dirname, "public"),
 //   path.join(__dirname, "views")
 // ]);
-
 // // 👇 Middleware para inyectar el script de livereload
 // app.use(connectLivereload());
 
@@ -23,21 +22,17 @@
 // });
 
 // // Configuración del servidor Express
-// app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
 // app.use(express.static('public'));
 
-// app.get('/', (req, res) => {
-//   res.render('index');
-// });
+// Configuración del motor de vistas y la carpeta de vistas
+app.set('views', path.join(__dirname, 'views'));
 
-// app.listen(3000, () => {
-//   console.log('Servidor en http://localhost:3000');
-// });
-const express = require('express');
-const app = express();
+// Sirve los archivos estáticos desde la carpeta 'public'
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.send('<h1>¡Hola! El servidor está funcionando correctamente.</h1>');
+  res.render('index');
 });
 
 const PORT = process.env.PORT || 3000;
