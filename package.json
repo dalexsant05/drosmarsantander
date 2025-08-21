@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "build:css": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css --watch",
-    "dev": "concurrently \"npm run build:css\" \"nodemon\""
+    "dev": "concurrently \"npm run build:css\" \"nodemon\"",
+    "build": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css"
   },
   "dependencies": {
     "ejs": "^3.1.9",

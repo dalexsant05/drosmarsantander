@@ -1165,10 +1165,6 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-metallic {
-  background-image: linear-gradient(145deg, #f2f2f2 0%, #bbbbbb 20%, #e5e5e5 40%, #999999 60%, #dcdcdc 80%, #ffffff 100%);
-}
-
 .from-transparent {
   --tw-gradient-from: transparent var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
@@ -1740,16 +1736,12 @@ html {
     top: 2rem;
   }
 
-  .sm\:top-auto {
-    top: auto;
-  }
-
-  .sm\:top-\[4rem\] {
-    top: 4rem;
-  }
-
   .sm\:top-\[8rem\] {
     top: 8rem;
+  }
+
+  .sm\:top-auto {
+    top: auto;
   }
 
   .sm\:mb-6 {
