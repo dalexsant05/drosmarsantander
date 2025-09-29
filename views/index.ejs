@@ -23,6 +23,21 @@
     <section class="relative sticky top-0 h-screen bg-dark-circle bg-dental-watermark text-white flex 
       items-center justify-center px-4 overflow-hidden">
       <!-- Imagen flotante izquierda -->
+      <!-- <img 
+        src="/img/labio_portada.png" 
+        alt="Diseño odontológico" 
+        class="absolute left-0 top-0 h-full object-contain pointer-events-none hidden md:block
+        animate-fade-in-left delay-300"
+      /> -->
+      <!-- Imagen superior SOLO móvil -->
+      <div class="block md:hidden absolute top-0 left-0 w-full">
+        <img 
+          src="/img/labio_portada.png" 
+          alt="Diseño odontológico" 
+          class="w-full object-cover mask-fade-bottom"
+        />
+      </div>
+      <!-- Imagen flotante izquierda SOLO escritorio -->
       <img 
         src="/img/labio_portada.png" 
         alt="Diseño odontológico" 
@@ -36,7 +51,7 @@
         class="
         absolute
         right-[2.1rem] sm:right-[5rem] md:right-[7rem] lg:right-[7rem]
-        top-[7rem] sm:top-[2rem] md:top-[3rem]
+        top-[22rem] sm:top-[2rem] md:top-[3rem]
         w-[340px] sm:w-[100px] md:w-[120px] lg:w-[430px]
         transition-all duration-200
         hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]
@@ -44,7 +59,7 @@
       />
       <!-- Contenido principal -->
       <div class="absolute bottom-10 text-center max-w-md z-10 sm:right-[5rem] md:right-[7rem] lg:right-[7rem]
-        top-[22.3rem] sm:top-[22.3rem] md:top-[22.3rem] reveal">
+        top-[37rem] sm:top-[22.3rem] md:top-[22.3rem] reveal">
         <p class="text-base sm:text-lg md:text-2xl font-cinzel tracking-wide text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] mb-6">
           Tu <span class="bg-gold-soft-text bg-clip-text text-transparent font-extrabold animate-gold-sweep">
           sonrisa
