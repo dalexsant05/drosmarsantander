@@ -739,12 +739,144 @@ video {
   top: 7rem;
 }
 
+.right-\[0\.7em\] {
+  right: 0.7em;
+}
+
+.right-\[0\.5em\] {
+  right: 0.5em;
+}
+
+.top-\[10rem\] {
+  top: 10rem;
+}
+
+.right-\[1rem\] {
+  right: 1rem;
+}
+
+.right-\[2rem\] {
+  right: 2rem;
+}
+
+.right-\[1\.5rem\] {
+  right: 1.5rem;
+}
+
+.right-\[1\.4rem\] {
+  right: 1.4rem;
+}
+
+.right-\[1\.6rem\] {
+  right: 1.6rem;
+}
+
+.right-\[2\.1rem\] {
+  right: 2.1rem;
+}
+
+.right-\[5rem\] {
+  right: 5rem;
+}
+
+.right-\[6rem\] {
+  right: 6rem;
+}
+
+.right-\[6\.5rem\] {
+  right: 6.5rem;
+}
+
+.right-\[6\.2rem\] {
+  right: 6.2rem;
+}
+
+.right-auto {
+  right: auto;
+}
+
+.right-\[13rem\] {
+  right: 13rem;
+}
+
+.right-\[14rem\] {
+  right: 14rem;
+}
+
+.right-\[7rem\] {
+  right: 7rem;
+}
+
+.right-\[10rem\] {
+  right: 10rem;
+}
+
+.right-\[9rem\] {
+  right: 9rem;
+}
+
+.right-\[4rem\] {
+  right: 4rem;
+}
+
+.right-\[14\.5rem\] {
+  right: 14.5rem;
+}
+
+.right-\[9\.5rem\] {
+  right: 9.5rem;
+}
+
+.right-\[4\.8rem\] {
+  right: 4.8rem;
+}
+
+.right-\[9\.8rem\] {
+  right: 9.8rem;
+}
+
+.right-\[4\.9rem\] {
+  right: 4.9rem;
+}
+
+.top-\[-21\.9rem\] {
+  top: -21.9rem;
+}
+
+.top-\[-22rem\] {
+  top: -22rem;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-50 {
   z-index: 50;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
+
+.order-6 {
+  order: 6;
 }
 
 .mx-auto {
@@ -1712,6 +1844,50 @@ html {
 
   .sm\:top-auto {
     top: auto;
+  }
+
+  .sm\:right-\[4rem\] {
+    right: 4rem;
+  }
+
+  .sm\:right-\[3rem\] {
+    right: 3rem;
+  }
+
+  .sm\:right-\[8rem\] {
+    right: 8rem;
+  }
+
+  .sm\:right-\[-1rem\] {
+    right: -1rem;
+  }
+
+  .sm\:right-\[-10rem\] {
+    right: -10rem;
+  }
+
+  .sm\:order-1 {
+    order: 1;
+  }
+
+  .sm\:order-4 {
+    order: 4;
+  }
+
+  .sm\:order-2 {
+    order: 2;
+  }
+
+  .sm\:order-3 {
+    order: 3;
+  }
+
+  .sm\:order-5 {
+    order: 5;
+  }
+
+  .sm\:order-6 {
+    order: 6;
   }
 
   .sm\:mb-6 {
