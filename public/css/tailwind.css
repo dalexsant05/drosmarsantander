@@ -98,3 +98,21 @@ html {
   background-size: 200% 200%;
   animation: goldSweep 4s ease-in-out infinite;
 }
+
+.responsive-image .mobile-img {
+  display: none;
+}
+
+.responsive-image .desktop-img {
+  display: block;
+}
+
+/* 📱 Solo móvil vertical */
+@media (max-width: 639px) and (orientation: portrait) {
+  .responsive-image .mobile-img {
+    display: block;
+  }
+  .responsive-image .desktop-img {
+    display: none;
+  }
+}

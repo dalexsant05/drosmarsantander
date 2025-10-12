@@ -34,7 +34,7 @@
         <img 
           src="/img/labio_portada.png" 
           alt="Diseño odontológico" 
-          class="w-full object-cover mask-fade-bottom"
+          class="w-full object-cover animate-fade-in-down mask-fade-bottom"
         />
       </div>
       <!-- Imagen flotante izquierda SOLO escritorio -->
@@ -50,17 +50,22 @@
         alt="Logo" 
         class="
         absolute
-        right-[2.1rem] sm:right-[5rem] md:right-[7rem] lg:right-[7rem]
-        top-[22rem] sm:top-[2rem] md:top-[3rem]
-        w-[340px] sm:w-[100px] md:w-[120px] lg:w-[430px]
+        portrait:right-[2.1rem] portrait:top-[22rem] portrait:w-[340px]
+        sm-landscape:right-[5rem] sm-landscape:top-[3rem] sm-landscape:w-[250px]
+        sm:right-[5rem] md:right-[7rem] lg:right-[7rem]
+        sm:top-[2rem] md:top-[3rem]
+        sm:w-[100px] md:w-[120px] lg:w-[430px]
         transition-all duration-200
         hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]
         animate-fade-in-down delay-300"
       />
       <!-- Contenido principal -->
-      <div class="absolute bottom-10 text-center max-w-md z-10 sm:right-[5rem] md:right-[7rem] lg:right-[7rem]
-        top-[37rem] sm:top-[22.3rem] md:top-[22.3rem] reveal">
-        <p class="text-base sm:text-lg md:text-2xl font-cinzel tracking-wide text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] mb-6">
+      <div class="absolute bottom-10 text-center max-w-md z-10 
+        portrait:top-[37rem]
+        sm-landscape:top-[14rem] sm-landscape:right-[2.9rem] 
+        sm:right-[5rem] md:right-[7rem] lg:right-[7rem]
+        sm:top-[22.3rem] md:top-[22.3rem] reveal">
+        <p class="text-base sm-landscape:text-lg sm:text-lg md:text-2xl font-cinzel tracking-wide text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] mb-6">
           Tu <span class="bg-gold-soft-text bg-clip-text text-transparent font-extrabold animate-gold-sweep">
           sonrisa
         </span>, tu mejor accesorio
@@ -86,10 +91,11 @@
         <!-- Foto del doctor -->
         <div class="
           absolute sm:relative
-          right-[6.2rem] top-[-22rem]
+          portrait:right-[6.2rem] portrait:top-[-22rem] portrait:w-[195px] portrait:h-[195px]
+          sm-landscape:right-[-5rem] sm-landscape:top-[0.2rem] sm-landscape:w-[280px] sm-landscape:h-[280px]
           sm:right-auto sm:top-auto
           lg:left-[4rem] lg:top-2
-          w-[195px] h-[195px] sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-[435px] lg:h-[435px]
+          sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-[435px] lg:h-[435px]
           rounded-full
           transition-all duration-500 group reveal
         ">
@@ -100,47 +106,56 @@
         <!-- Texto informativo -->
         <div class="
           absolute sm:relative
-          left-[1rem] top-[-8rem]
+          portrait:left-[1rem] portrait:top-[-8rem]
+          sm-landscape:left-[-1rem] sm-landscape:top-[-3.5rem]
           sm:left-auto sm:top-auto
           lg:ml-[1rem]
-          self-auto lg:self-start
+          portrait:self-auto lg:self-start
           max-w-[90%] sm:max-w-none
           text-center md:text-left z-10
         ">
-          <h2 class="text-xl sm:text-3xl font-semibold bg-gold-soft-texto bg-clip-text text-transparent 
+          <h2 class="portrait:text-xl sm-landscape:text-xl sm:text-3xl font-semibold bg-gold-soft-texto bg-clip-text text-transparent 
             mb-4 sm:mb-6 transition-all duration-200 
             drop-shadow-[0_0_12px_rgba(255,215,0,0.1)] font-cinzel reveal animate-gold-sweep">
             Dr. Osmar Santander
           </h2>
-          <p class="text-sm sm:text-lg leading-relaxed font-inter text-justify reveal">
+          <p class="portrait:text-sm sm-landscape:text-sm sm:text-lg leading-relaxed font-inter text-justify reveal">
             Odontólogo egresado de la Universidad Santiago de Cali, con más de 8 años de experiencia transformando sonrisas. Me especializo en tecnología biomimética y técnicas avanzadas que garantizan precisión, naturalidad y resultados duraderos.
             Mi compromiso con la excelencia, el profesionalismo y un enfoque totalmente personalizado me permite brindar a cada paciente la confianza y atención que merece.
           </p>
         </div>
         <!-- logos -->
-        <div class="absolute right-[14.5rem] sm:right-[5rem] md:right-[7rem] lg:right-[29rem]
-            top-[11rem] sm:top-[8rem] lg:top-[17rem]
-            w-[72px] sm:w-[100px] md:w-[120px] lg:w-[88px] h-auto reveal">
+        <div class="absolute portrait:right-[14.5rem] portrait:top-[11rem] portrait:w-[72px] 
+          sm-landscape:right-[23rem] sm-landscape:top-[12rem] sm-landscape:w-[60px]
+          sm:right-[5rem] md:right-[7rem] lg:right-[29rem]
+          sm:top-[8rem] lg:top-[17rem]
+          sm:w-[100px] md:w-[120px] lg:w-[88px] h-auto reveal">
           <img src="/img/logo_usc.png" alt="Logo usc" class="w-full h-full object-contain" />
           <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-70 
                       animate-shine pointer-events-none transform rotate-12"></div>
         </div>
-        <div class="absolute right-[9.8rem] sm:right-[5rem] md:right-[7rem] lg:right-[23.5rem]
-          top-[10.7rem] sm:top-[2rem] lg:top-[17rem]
-          w-[68px] sm:w-[100px] md:w-[120px] lg:w-[80px] reveal h-auto">
+        <div class="absolute portrait:right-[9.8rem] portrait:top-[10.7rem] portrait:w-[68px]
+          sm-landscape:right-[19.2rem] sm-landscape:top-[11.9rem] sm-landscape:w-[56px]
+          sm:right-[5rem] md:right-[7rem] lg:right-[23.5rem] 
+          sm:top-[2rem] lg:top-[17rem] 
+          sm:w-[100px] md:w-[120px] lg:w-[80px] reveal h-auto">
           <img src="/img/logo_federacion.png" alt="Logo Federación" class="w-full h-full object-contain" />
           <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-70 
                       animate-shine pointer-events-none transform rotate-12"></div>
         </div>
-        <div class="absolute right-[4.9rem] sm:right-[5rem] md:right-[7rem] lg:right-[18rem]
-          top-[10.9rem] sm:top-[2rem] lg:top-[17rem]
-          w-[70px] sm:w-[100px] md:w-[120px] lg:w-[80px] reveal h-auto">
+        <div class="absolute portrait:right-[4.9rem] portrait:top-[10.9rem] portrait:w-[70px]
+          sm-landscape:right-[15rem] sm-landscape:top-[12rem] sm-landscape:w-[60px] 
+          sm:right-[5rem] md:right-[7rem] lg:right-[18rem]
+          sm:top-[2rem] lg:top-[17rem]
+          sm:w-[100px] md:w-[120px] lg:w-[80px] reveal h-auto">
           <img src="/img/logo_servicio.png" alt="Logo servicio" class="w-full h-full object-contain" />
           <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-70 
                       animate-shine pointer-events-none transform rotate-12"></div>
         </div>
         <!-- boton -->
-        <div class="reveal absolute top-[16.7rem] right-[6.5rem] md:top-[20rem] md:right-[10rem] lg:top-[18rem] lg:right-[1rem]">
+        <div class="reveal absolute portrait:top-[16.7rem] portrait:right-[6.5rem]
+          sm-landscape:right-[2rem] sm-landscape:top-[12.3rem] 
+          md:top-[20rem] md:right-[10rem] lg:top-[18rem] lg:right-[1rem]">
           <a href="#gallery"
             class="btn-gold-soft transform-gpu inline-flex items-center gap-2 text-black max-w-max font-inter">
             <i class="fa-solid fa-tooth text-base"></i>
@@ -151,14 +166,14 @@
     </section>
 
     <!-- Servicios -->
-    <section id="services" class="sticky top-0 h-screen bg-gold-soft bg-dental-watermark py-10 pt-3 px-4 flex items-center justify-center">
-      <div class="w-full max-w-6xl px-4 text-center">
+    <section id="services" class="sticky top-0 h-screen bg-gold-soft bg-dental-watermark py-10 pt-3 px-4 flex flex-col items-center justify-center sm-landscape:justify-start sm-landscape:pt-8">
+      <div class="w-full max-w-6xl px-4 text-center sm-landscape:mt-[2rem]">
         <h2 class="text-2xl lg:text-3xl sm:text-3xl font-semibold
           bg-gradient-to-r text-[#111111]
           bg-clip-text mb-10 transition-all duration-200 font-cinzel reveal">
           Nuestros Servicios
         </h2>
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:[1.5rem]">
           <div class="holo-card relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center reveal">
             <img src="/img/ceramica.png" alt="Cerámica" class="w-16 h-16 object-contain mb-3 transition-transform duration-300 hover:scale-105" />
             <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Diseño de sonrisa en cerámica</h3>
@@ -217,12 +232,28 @@
             <div class="rounded-xl flex flex-col items-center gap-4">
               <!-- Galería de imágenes -->
               <div class="grid grid-cols-2 pt-1 sm:grid-cols-3 gap-4">
-                <div class="w-full"><img src="/img/caso_4/1.png" alt="Caso 1" onclick="openModal('/img/caso_4/1.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
-                <div class="w-full"><img src="/img/caso_4/3.png" alt="Caso 3" onclick="openModal('/img/caso_4/3.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
-                <div class="w-full"><img src="/img/caso_4/5.png" alt="Caso 5" onclick="openModal('/img/caso_4/5.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
-                <div class="w-full"><img src="/img/caso_4/2.png" alt="Caso 2" onclick="openModal('/img/caso_4/2.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
-                <div class="w-full"><img src="/img/caso_4/4.png" alt="Caso 4" onclick="openModal('/img/caso_4/4.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
-                <div class="w-full"><img src="/img/caso_4/6.png" alt="Caso 6" onclick="openModal('/img/caso_4/6.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" /></div>
+                <div class="w-full">
+                  <img src="/img/caso_4/1.png" alt="Caso 1" onclick="openModal('/img/caso_4/1.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
+                <div class="w-full responsive-image">
+                  <img src="/img/caso_4/3.png" alt="Caso 3" onclick="openModal('/img/caso_4/3.png')" class="desktop-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                  <img src="/img/caso_4/2.png" alt="Caso 3" onclick="openModal('/img/caso_4/2.png')" class="mobile-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
+                <div class="w-full responsive-image">
+                  <img src="/img/caso_4/5.png" alt="Caso 5" onclick="openModal('/img/caso_4/5.png')" class="desktop-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                  <img src="/img/caso_4/3.png" alt="Caso 5" onclick="openModal('/img/caso_4/3.png')" class="mobile-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
+                <div class="w-full responsive-image">
+                  <img src="/img/caso_4/2.png" alt="Caso 2" onclick="openModal('/img/caso_4/2.png')" class="desktop-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                  <img src="/img/caso_4/4.png" alt="Caso 2" onclick="openModal('/img/caso_4/4.png')" class="mobile-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
+                <div class="w-full responsive-image">
+                  <img src="/img/caso_4/4.png" alt="Caso 4" onclick="openModal('/img/caso_4/4.png')" class="desktop-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                  <img src="/img/caso_4/5.png" alt="Caso 4" onclick="openModal('/img/caso_4/5.png')" class="mobile-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
+                <div class="w-full">
+                  <img src="/img/caso_4/6.png" alt="Caso 6" onclick="openModal('/img/caso_4/6.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
               </div>
               <!-- Texto Descriptivo -->
               <div class="bg-white backdrop-blur-sm text-center text-sm w-full max-w-[780px] rounded-xl px-2 py-2 space-y-2">
@@ -242,12 +273,28 @@
             <div class="rounded-xl flex flex-col items-center gap-4">
               <!-- Galería de imágenes 3x2 o 2x3 según pantalla -->
               <div class="grid grid-cols-2 pt-1 sm:grid-cols-3 gap-4">
-                <img src="/img/caso_1/1.png" alt="Caso 1" onclick="openModal('/img/caso_1/1.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
-                <img src="/img/caso_1/3.png" alt="Caso 3" onclick="openModal('/img/caso_1/3.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
-                <img src="/img/caso_1/5.png" alt="Caso 5" onclick="openModal('/img/caso_1/5.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
-                <img src="/img/caso_1/2.png" alt="Caso 2" onclick="openModal('/img/caso_1/2.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
-                <img src="/img/caso_1/4.png" alt="Caso 4" onclick="openModal('/img/caso_1/4.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
-                <img src="/img/caso_1/6.png" alt="Caso 6" onclick="openModal('/img/caso_1/6.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                <div class="w-full">
+                  <img src="/img/caso_1/1.png" alt="Caso 1" onclick="openModal('/img/caso_1/1.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
+                <div class="w-full responsive-image">
+                  <img src="/img/caso_1/3.png" alt="Caso 3" onclick="openModal('/img/caso_1/3.png')" class="desktop-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                  <img src="/img/caso_1/2.png" alt="Caso 3" onclick="openModal('/img/caso_1/2.png')" class="mobile-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
+                <div class="w-full responsive-image">
+                  <img src="/img/caso_1/5.png" alt="Caso 5" onclick="openModal('/img/caso_1/5.png')" class="desktop-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                  <img src="/img/caso_1/3.png" alt="Caso 5" onclick="openModal('/img/caso_1/3.png')" class="mobile-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
+                <div class="w-full responsive-image">
+                  <img src="/img/caso_1/2.png" alt="Caso 2" onclick="openModal('/img/caso_1/2.png')" class="desktop-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                  <img src="/img/caso_1/4.png" alt="Caso 2" onclick="openModal('/img/caso_1/4.png')" class="mobile-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
+                <div class="w-full responsive-image">
+                  <img src="/img/caso_1/4.png" alt="Caso 4" onclick="openModal('/img/caso_1/4.png')" class="desktop-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                  <img src="/img/caso_1/5.png" alt="Caso 4" onclick="openModal('/img/caso_1/5.png')" class="mobile-img w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
+                <div class="w-full">
+                  <img src="/img/caso_1/6.png" alt="Caso 6" onclick="openModal('/img/caso_1/6.png')" class="w-full h-32 sm:h-40 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105" />
+                </div>
               </div>
               <!-- Texto Descriptivo -->
               <div class="bg-white backdrop-blur-sm text-center text-sm w-full max-w-[780px] rounded-xl px-2 py-2 space-y-2">

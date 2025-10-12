@@ -3,6 +3,11 @@ module.exports = {
   content: ["./views/**/*.ejs", "./public/js/**/*.js"],
   theme: {
     extend: {
+      screens: {
+        'portrait': { 'raw': '(orientation: portrait)' },
+        'landscape': { 'raw': '(orientation: landscape)' },
+        'sm-landscape': { 'raw': '(max-width: 1024px) and (orientation: landscape)' },
+      },
       backgroundImage: {
         // 'dark-circle': 'radial-gradient(circle at center, #000000, #111111 40%, #1a1a1a 70%, #cccccc)',
         'dark-circle': 'radial-gradient(circle at 100% 120%, #cccccc 0%, #1a1a1a 45%, #111111 50%, #000000 100%)',
