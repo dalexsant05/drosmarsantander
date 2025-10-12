@@ -748,6 +748,10 @@ video {
   height: 1rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1155,10 +1159,6 @@ video {
   padding-top: 0.25rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1458,6 +1458,32 @@ html {
   }
 }
 
+/* 🎴 Flip tipo carta con profundidad */
+
+.flip-card {
+  perspective: 1200px;
+}
+
+.flip-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  position: relative;
+}
+
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg) translateY(-5%) scale(1.03);
+}
+
+.flip-front,
+.flip-back {
+  backface-visibility: hidden;
+  position: fixed;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1713,6 +1739,11 @@ html {
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm\:text-lg {
@@ -2076,3 +2107,4 @@ html {
     line-height: 1.75rem;
   }
 }
+

@@ -116,3 +116,28 @@ html {
     display: none;
   }
 }
+/* 🎴 Flip tipo carta con profundidad */
+.flip-card {
+  perspective: 1200px;
+}
+
+.flip-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  position: relative;
+}
+
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg) translateY(-5%) scale(1.03);
+}
+
+.flip-front,
+.flip-back {
+  backface-visibility: hidden;
+  position: fixed;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+

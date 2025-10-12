@@ -166,14 +166,14 @@
     </section>
 
     <!-- Servicios -->
-    <section id="services" class="sticky top-0 h-screen bg-gold-soft bg-dental-watermark py-10 pt-3 px-4 flex flex-col items-center justify-center sm-landscape:justify-start sm-landscape:pt-8">
+    <section id="services" class="sticky top-0 h-screen bg-gold-soft bg-dental-watermark py-10 px-4 flex flex-col items-center justify-center sm-landscape:justify-start sm-landscape:pt-8">
       <div class="w-full max-w-6xl px-4 text-center sm-landscape:mt-[2rem]">
         <h2 class="text-2xl lg:text-3xl sm:text-3xl font-semibold
           bg-gradient-to-r text-[#111111]
           bg-clip-text mb-10 transition-all duration-200 font-cinzel reveal">
           Nuestros Servicios
         </h2>
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:[1.5rem]">
+        <!-- <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:[1.5rem]">
           <div class="holo-card relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center reveal">
             <img src="/img/ceramica.png" alt="Cerámica" class="w-16 h-16 object-contain mb-3 transition-transform duration-300 hover:scale-105" />
             <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Diseño de sonrisa en cerámica</h3>
@@ -202,6 +202,85 @@
           <div class="holo-card bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center reveal">
             <img src="/img/limpieza.png" alt="Limpieza" class="w-16 h-16 object-contain mb-3 transition-transform duration-300 hover:scale-105" />
             <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Limpieza</h3>
+          </div>
+        </div> -->
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:[1.5rem]">
+          <!-- 🦷 Card 1 -->
+          <div class="flip-card relative w-full h-40 sm:h-50 reveal">
+            <div class="flip-inner bg-white w-full h-40 sm:h-40 rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center cursor-pointer">
+              <div class="flip-front flex flex-col items-center">
+                <img src="/img/ceramica.png" alt="Cerámica" class="w-16 h-16 mb-3 object-contain" />
+                <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Diseño de sonrisa en cerámica</h3>
+              </div>
+              <div class="flip-back absolute inset-0 bg-white rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center text-gray-800 font-inter text-sm sm:text-base">
+                <p>Carillas cerámicas de alta estética y precisión digital para una sonrisa natural y duradera.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 🦷 Card 2 -->
+          <div class="flip-card relative w-full h-40 sm:h-50 reveal">
+            <div class="flip-inner bg-white w-full h-40 sm:h-40 rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center cursor-pointer">
+              <div class="flip-front flex flex-col items-center">
+                <img src="/img/resina.png" alt="Resina" class="w-16 h-16 mb-3 object-contain" />
+                <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Diseño de sonrisa en resina</h3>
+              </div>
+              <div class="flip-back absolute inset-0 bg-white rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center text-gray-800 font-inter text-sm sm:text-base">
+                <p>Opción estética y rápida para mejorar forma y color dental en una sola sesión.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 🦷 Card 3 -->
+          <div class="flip-card relative w-full h-40 sm:h-50 reveal">
+            <div class="flip-inner bg-white w-full h-40 sm:h-40 rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center cursor-pointer">
+              <div class="flip-front flex flex-col items-center">
+                <img src="/img/restaurar.png" alt="Restaurativa" class="w-16 h-16 mb-3 object-contain" />
+                <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Odontología restaurativa</h3>
+              </div>
+              <div class="flip-back absolute inset-0 bg-white rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center text-gray-800 font-inter text-sm sm:text-base">
+                <p>Repara dientes dañados devolviendo funcionalidad y armonía con materiales biomiméticos.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 🦷 Card 4 -->
+          <div class="flip-card relative w-full h-40 sm:h-50 reveal">
+            <div class="flip-inner bg-white w-full h-40 sm:h-40 rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center cursor-pointer">
+              <div class="flip-front flex flex-col items-center">
+                <img src="/img/implantes.png" alt="Implantes" class="w-16 h-16 mb-3 object-contain" />
+                <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Rehabilitación e implantes</h3>
+              </div>
+              <div class="flip-back absolute inset-0 bg-white rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center text-gray-800 font-inter text-sm sm:text-base">
+                <p>Implantes dentales y prótesis que restauran tu sonrisa y confianza con resultados naturales.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 🦷 Card 5 -->
+          <div class="flip-card relative w-full h-40 sm:h-50 reveal">
+            <div class="flip-inner bg-white w-full h-40 sm:h-40 rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center cursor-pointer">
+              <div class="flip-front flex flex-col items-center">
+                <img src="/img/endodoncia.png" alt="Endodoncia" class="w-16 h-16 mb-3 object-contain" />
+                <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Endodoncia</h3>
+              </div>
+              <div class="flip-back absolute inset-0 bg-white rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center text-gray-800 font-inter text-sm sm:text-base">
+                <p>Tratamiento para conservar dientes comprometidos eliminando infecciones internas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 🦷 Card 6 -->
+          <div class="flip-card relative w-full h-40 sm:h-50 reveal">
+            <div class="flip-inner bg-white w-full h-40 sm:h-40 rounded-2xl shadow-md hover:shadow-2xl transition-all p-4 sm:p-6 flex flex-col items-center text-center cursor-pointer">
+              <div class="flip-front flex flex-col items-center">
+                <img src="/img/limpieza.png" alt="Limpieza" class="w-16 h-16 mb-3 object-contain" />
+                <h3 class="text-sm sm:text-lg font-bold text-gray-800 font-cinzel">Limpieza</h3>
+              </div>
+              <div class="flip-back absolute inset-0 bg-white rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center text-gray-800 font-inter text-sm sm:text-base">
+                <p>Remueve placa y manchas para mantener tus dientes saludables y brillantes.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -643,6 +722,12 @@
       startAutoScroll();
     }
   </script>
-
+  <script>
+    document.querySelectorAll('.flip-card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+      });
+    });
+  </script>
 </body>
 </html>
